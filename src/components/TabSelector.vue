@@ -12,10 +12,10 @@
             <input type="radio" name="tab" :checked="tab === 'battle'" />
             <span class="name">大模型竞技场</span>
         </label> -->
-        <label class="radio" @click="changeModel('image')">
+        <!-- <label class="radio" @click="changeModel('image')">
             <input type="radio" name="tab" :checked="tab === 'image'" />
             <span class="name">识图</span>
-        </label>
+        </label> -->
         <label class="radio" @click="changeModel('cogview')">
             <input type="radio" name="tab" :checked="tab === 'cogview'" />
             <span class="name">图片生成</span>
@@ -28,9 +28,9 @@
             <input type="radio" name="tab" :checked="tab === 'imgvideo'" />
             <span class="name">视频生成</span>
         </label>
-        <label class="radio" @click="openUrl()">
+        <!-- <label class="radio" @click="openUrl()">
             <span class="name">实时交互</span>
-        </label>
+        </label> -->
     </div>
 </template>
 

@@ -2,8 +2,8 @@
     <div>
         <!-- 底部介绍 -->
         <footer class="fixed bottom-1 left-3 right-3 border-gray-200 text-xs text-center text-gray-500 z-1">
-            <a href="javascript:;" class="text-black-500" @click="showInfo = true">本项目集成大模型技术生态</a>
-            |
+            <!-- <a href="javascript:;" class="text-black-500" @click="showInfo = true">本项目集成大模型技术生态</a>
+            | -->
             <a href="javascript:;" class="text-black-500" @click="showWeChatQR = true"> 联系作者 </a>
         </footer>
         <div v-if="showWeChatQR" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" @click.self="showWeChatQR = false">
@@ -28,7 +28,7 @@ export default {
     data() {
         return {
             showWeChatQR: false,
-            wechatQR: require('@/assets/WeChat.jpg'),
+            wechatQR: require('@/assets/WeChat.png'),
             showInfo: false,
             modelIntroduce: `
 🧠 代码/部署
