@@ -90,7 +90,7 @@ export default {
             messages: [], // 初始化为空
             isThinking: false,
             mode: 'angry',
-            model: 'shuinifengxin',
+            model: 'gpt35',
             tab: 'chat',
             isDeepThinking: false,
             abortController: null // 用来保存 AbortController 实例
