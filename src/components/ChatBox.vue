@@ -290,7 +290,7 @@ export default {
         changeTab(newTab) {
             this.tab = newTab
             this.isDeepThinking = false
-            this.model = 'shuinifengxin'
+            this.model = 'gpt35'
             this.messages = []
             this.insertDefaultMessage()
         },

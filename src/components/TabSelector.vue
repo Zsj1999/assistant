@@ -44,6 +44,7 @@ export default {
     },
     methods: {
         changeModel(newModel) {
+            console.log(newModel, 'newModel')
             this.$emit('tab-selected', newModel)
         },
         openUrl() {

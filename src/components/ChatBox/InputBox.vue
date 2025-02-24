@@ -55,7 +55,7 @@
                     </button>
 
                     <button
-                        v-if="model === 'gpt35' || model === 'gemini' || model === 'kimi' || model === 'stepfunChat'"
+                        v-if="model === 'gpt35'|| model === 'kimi' || model === 'stepfunChat'"
                         class="think inline-flex items-center cursor-pointer px-2 py-1 rounded-full transition-colors"
                         :class="think ? 'bg-[#DBEAFE] border-[#4D6BFE] text-[#4D6BFE]' : 'bg-gray-200 border-gray-400 text-gray-600'"
                         @click="changeThink"
@@ -134,7 +134,7 @@ export default {
             initialHeight: 100, // 初始化高度，用于重置
             placeholder: '来说点什么...',
             userInput: '',
-            selectedModel: 'model1', // 默认选择的模型
+            selectedModel: 'gpt35', // 默认选择的模型
             isDeepThinking: false, // 深度思考开关状态
             showPasswordModal: false, // 控制密码模态框的显示与隐藏
             passwordInput: '', // 用户输入的密码
@@ -142,6 +142,9 @@ export default {
             think: false
         }
     },
+    // mounted() {
+    //     // console.log(this.selectedModel,'this.model')
+    // },
     methods: {
         handleInput(event) {
             autoResizeTextarea(event.target)
@@ -237,7 +240,9 @@ export default {
             this.think = false
         }
     },
-    mounted() {}
+    mounted() {
+        console.log(this.model, 'this.model')
+    }
 }
 </script>
 <style scoped>
